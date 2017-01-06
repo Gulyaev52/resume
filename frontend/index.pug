@@ -1,3 +1,4 @@
+include template/personal-info/personal-info
 include template/section/section
 include template/contact/contact
 include template/icon/icon
@@ -8,6 +9,11 @@ html
     body
         include template/layout/layout
             .layout__column.layout__column_left 
+                +personal-info({ 
+                    name: "name here", 
+                    surname: "surname", 
+                    profession: "graphic designer" 
+                })
                 +section({ title: "profile", icon: "profile" })
                     p
                         |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
