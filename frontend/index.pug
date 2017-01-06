@@ -1,13 +1,13 @@
-include template/personal-info/personal-info
-include template/section/section
-include template/contact/contact
-include template/icon/icon
-include template/skill/skill
+include blocks/personal-info/personal-info
+include blocks/section/section
+include blocks/contact/contact
+include blocks/icon/icon
+include blocks/skill/skill
 
 html
     title Resume
     body
-        include template/layout/layout
+        include blocks/layout/layout
             .layout__column.layout__column_left 
                 +personal-info({ 
                     name: "name here", 
@@ -37,3 +37,4 @@ html
                     +skill({ name: "innovate", value: 6 })
                     +skill({ name: "communication", value: 11 })
             .layout__column.layout__column_right 
+                +section({ title: "education", icon: "education" })
