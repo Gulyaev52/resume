@@ -1,0 +1,33 @@
+unactiveColor = #e6e6e6
+
+.skill
+    display flex 
+    justify-content center 
+    align-items center
+    flex-direction column
+    margin-top 4%
+
+    &__name
+        font-size 1.78em
+        text-transform uppercase
+
+    &__value
+        display flex
+        justify-content space-between
+        width 80%
+        height 20px 
+
+    &__value-item 
+        height 20px
+        width @height
+        border-radius 50%
+
+    &__value-item_active
+        background-color mainColor
+
+    &__value-item_unactive
+        background-color unactiveColor
+
+    
+        
+    
