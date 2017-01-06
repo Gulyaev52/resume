@@ -1,0 +1,22 @@
+mixin contact(options)  
+    .contact
+        .contact__title= options.title
+        if (options.type == 'tel')
+            a.contact__value(href = `tel: ${options.value}`)
+                = options.value
+
+        else if (options.type == 'email')
+            a.contact__value(href = `mailto: ${options.value}`)
+                = options.value
+
+        else if (options.type == 'skype')
+            a.contact__value(href = `skype: ${options.value}?call`)
+                = options.value
+
+        else if (options.type == 'link')
+            a.contact__value(href = options.value)
+                = options.value
+
+        else
+            .contact__value= options.value
+    

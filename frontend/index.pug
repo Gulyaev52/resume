@@ -1,4 +1,5 @@
 include template/section/section
+include template/contact/contact
 include template/icon/icon
 
 html
@@ -18,4 +19,9 @@ html
                         |Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
                         |eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
                         |Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </b>
+                +section({ title: "contact", icon: "profile" })
+                    +contact({ title: "adress", value: "Main Street, City." })
+                    +contact({ title: "e-mail", type: "email", value: "contact@domain.com" })
+                    +contact({ title: "phone", type: "tel", value: "555-555-555" })
+                    +contact({ title: "website", type: "link", value: "http://www.yourweb.com" })
             .layout__column.layout__column_right 
