@@ -1,0 +1,8 @@
+mixin list-item(options)
+    .list-item
+        .list-item__title
+            .list-item__title-item.list-item__name(class=options.nameClass)= options.name
+            .list-item__title-item.list-item__date= options.date
+            .list-item__title-item.list-item__subname= options.subname
+        .list-item__content
+            block

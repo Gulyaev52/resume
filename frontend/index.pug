@@ -4,6 +4,7 @@ include blocks/contact/contact
 include blocks/icon/icon
 include blocks/skill/skill
 include blocks/education/education
+include blocks/experience/experience
 
 html
     title Resume
@@ -44,7 +45,7 @@ html
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                             |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                            |ultricies nec, pellentesque eu, pretium quis, sem. 
                     +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -63,3 +64,22 @@ html
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                             |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                             |ultricies nec, pellentesque eu, pretium quis, sem.
+                +section({ title: "experience", icon: "experience" })
+                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
+                        p
+                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
+                        p
+                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
+                        p
+                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                            |ultricies nec, pellentesque eu, pretium quis, sem. 
