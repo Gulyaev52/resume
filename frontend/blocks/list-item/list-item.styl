@@ -1,16 +1,16 @@
 .list-item
     position relative
-    padding-left 10%
     margin-top 3%
+    padding-left 8% 
 
     &:before
         content "" 
         position absolute
-        left 18px
-        top 7px
-        height 23px
+        top 8px
+        left 10px
+        height 21px
         width @height
-        border-radius 50%
+        border-radius 50% 
         background-color black 
 
     &__title
@@ -22,6 +22,9 @@
         text-transform uppercase
         margin-right 2%
 
+    &__name
+        font-family MyriadProBold
+
     &__date
         text-transform capitalize
 
@@ -31,3 +34,7 @@
 
     &__content
         margin-top 5px
+
+@media screen and (max-width: 569px)
+    .list-item 
+        padding-left 50px

@@ -3,22 +3,29 @@
     justify-content center 
     align-items center
     flex-direction column
-    margin-top 4%
+    margin-top 4% 
 
     &__name
         font-size 1.78em
         text-transform uppercase
 
     &__value
-        display flex
-        justify-content space-between
-        width 80%
-        height 20px 
+        max-width 366px
+        width 100%
+        margin 0 auto
+        margin-top 0.9%
 
-    &__value-item 
-        height 20px
-        width @height
+    &__value-item   
+        display inline-block
+        width 5.26%
         border-radius 50%
+        margin 1.51%
+        margin-bottom 0
+
+        &:before
+            content ""
+            display block
+            padding-top 100%
 
     &__value-item_active
         background-color mainColor
