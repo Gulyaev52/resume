@@ -1,0 +1,26 @@
+.software
+    display flex
+    flex-direction column
+    width 45%
+    margin-bottom 30px
+
+    &__name
+        font-size 30px
+        text-transform uppercase
+        margin-bottom 15px
+
+    &__progress-frame 
+        height 20px 
+        background-color unactiveColor
+
+    &__progress-value
+        height 100%
+
+    &:nth-child(2n+1)
+      float left
+
+    &:nth-child(2n)
+      float right
+
+    &:nth-child(-n+2)
+      margin-top 1%

@@ -1,16 +1,16 @@
 include blocks/personal-info/personal-info
 include blocks/section/section
-include blocks/contact/contact
-include blocks/icon/icon
+include blocks/contact/contact 
 include blocks/skill/skill
 include blocks/education/education
 include blocks/experience/experience
+include blocks/software/software
 
 html
     title Resume
     body
         include blocks/layout/layout
-            .layout__column.layout__column_left 
+            .layout__column.layout__column_left  
                 +personal-info({ 
                     name: "name here", 
                     surname: "surname", 
@@ -82,4 +82,12 @@ html
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                             |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                +section({ title: "software", icon: "software" })
+                    +software({ name: "photoshop", value: 95 })
+                    +software({ name: "illustrator", value: 80 })
+                    +software({ name: "indesign", value: 50 })
+                    +software({ name: "dreamweaver", value: 85 })
+                    +software({ name: "after effects", value: 55 })
+                    +software({ name: "html&css3", value: 95 })
+                     
