@@ -1,10 +1,10 @@
 include ../list-item/list-item
 
-mixin experience(options) 
+mixin experience({ company, date, job }) 
     -const optionsListItem = { 
-    -    name: options.company, 
-    -    date: options.date, 
-    -    subname: options.job,
+    -    name: company, 
+    -    date: date, 
+    -    subname: job,
     -    nameClass: "experience-color" 
     -}
     +list-item(optionsListItem)

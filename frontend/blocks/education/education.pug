@@ -1,10 +1,10 @@
 include ../list-item/list-item
 
-mixin education(options) 
+mixin education({ degree, date, university }) 
     -const optionsListItem = { 
-    -    name: options.degree, 
-    -    date: options.date, 
-    -    subname: options.university,
+    -    name: degree, 
+    -    date: date, 
+    -    subname: university,
     -    nameClass: "education-color" 
     -}
     +list-item(optionsListItem)
