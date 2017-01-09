@@ -36,46 +36,32 @@ a.contact__value {
   font-weight: bold;
 }
 .icon {
-  display: inline-block;
   height: 79.2px;
   width: 79.2px;
-}
-.icon__outer-frame {
-  height: 100%;
-  width: 100%;
   border-radius: 50%;
-  padding: 4px;
-  border: 1px solid #3d6cb0;
-}
-.icon__inner-frame {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
+  box-shadow: 0 0 0 1pt #3d6cb0;
+  border: 4px solid #fff;
   background-color: #3d6cb0;
-}
-.icon__image {
-  height: 75%;
-  width: 75%;
-  background-image: url(img/icon.png);
+  background-image: url(blocks/icon/sprites.png);
   background-repeat: no-repeat;
 }
-.icon__image_profile {
-  background-position: -10% -15%;
+.icon_profile {
+  background-position: 108% 115%;
 }
-.icon__image_contact {
-  background-position: 45% 90%;
+.icon_contact {
+  background-position: -6% -5%;
 }
-.icon__image_skill {
-  background-position: -93px -48px;
+.icon_skill {
+  background-position: 107% -15%;
 }
-.icon__image_education {
-  background-position: 95% -15%;
+.icon_education {
+  background-position: 50% -15%;
 }
-.icon__image_experience {
-  background-position: -8% 87%;
+.icon_experience {
+  background-position: 50% 112%;
 }
-.icon__image_software {
-  background-position: 43% -15%;
+.icon_software {
+  background-position: -5.5% 113%;
 }
 .layout {
   display: flex;
@@ -371,4 +357,4 @@ b {
   font-style: normal;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
