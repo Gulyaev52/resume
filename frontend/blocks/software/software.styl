@@ -1,8 +1,6 @@
-.software
-    display flex
-    flex-direction column
+.software  
     width 45%
-    margin-top 25px
+    margin-bottom 25px 
 
     &__name
         font-size 30px
@@ -14,13 +12,9 @@
         background-color unactiveColor
 
     &__progress-value
-        height 100%
-
-    &:nth-child(2n+1)
-      float left
-
-    &:nth-child(2n)
-      float right
-
-    &:nth-child(-n+2)
-      margin-top 1%
+        height 100% 
+        background-color mainColor
+ 
+ @media screen and (max-width: 516px)
+    .software  
+        width 100% 
