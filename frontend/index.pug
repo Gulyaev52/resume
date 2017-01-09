@@ -1,10 +1,10 @@
 include blocks/personal-info/personal-info
-include blocks/section/section
-include blocks/contact/contact 
-include blocks/skill/skill
-include blocks/education/education
-include blocks/experience/experience
-include blocks/software/software
+include blocks/profile/profile 
+include blocks/contact-list/contact-list 
+include blocks/skill-list/skill-list
+include blocks/education-list/education-list
+include blocks/experience-list/experience-list
+include blocks/software-list/software-list
 
 html
     meta(name="viewport", content="width=device-width, user-scalable=no")
@@ -19,75 +19,104 @@ html
                     name: "name here", 
                     surname: "surname", 
                     profession: "graphic designer" 
-                })
-                +section({ title: "profile", icon: "profile" })
-                    p
-                        |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                        |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                        |ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        |Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                        |rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <b>pede
-                        |mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                        |Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-                        |eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                        |Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
-                        |Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                        |rhoncus ut, imperdiet a, venenatis vitae, justo.
-                        | Aenean massa. Cum sociis natoque penatibus</b>
-                +section({ title: "contact", icon: "contact" })
-                    +contact({ title: "adress", value: "Main Street, City." })
-                    +contact({ title: "e-mail", type: "email", value: "contact@domain.com" })
-                    +contact({ title: "phone", type: "tel", value: "555-555-555" })
-                    +contact({ title: "website", type: "link", value: "http://www.yourweb.com" })
-                +section({ title: "skills", icon: "skill" })
-                    +skill({ name: "creative", value: 9 })
-                    +skill({ name: "teamwork", value: 11 })
-                    +skill({ name: "innovate", value: 6 })
-                    +skill({ name: "communication", value: 11 })
+                })  
+                +profile()
+                    |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                    |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    |ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    |Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                    |rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu <b>pede
+                    |mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                    |Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+                    |eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                    |Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+                    |Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                    |rhoncus ut, imperdiet a, venenatis vitae, justo.
+                    | Aenean massa. Cum sociis natoque penatibus</b> 
+
+                -
+                    contactListData = [
+                        { title: "adress", value: "Main Street, City." }, 
+                        { title: "e-mail", type: "email", value: "contact@domain.com" },
+                        { title: "phone", type: "tel", value: "555-555-555" },
+                        { title: "website", type: "link", value: "http://www.yourweb.com" }
+                    ]
+                +contact-list(contactListData)
+
+                -
+                    skillListData = [
+                        { name: "creative", value: 9 }, 
+                        { name: "teamwork", value: 11 },
+                        { name: "innovate", value: 6 },
+                        { name: "communication", value: 11 }
+                    ]
+                +skill-list(skillListData)
+
             .layout__column.layout__column_right 
-                +section({ title: "education", icon: "education" })
-                    +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                    +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                    +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                    +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                +section({ title: "experience", icon: "experience" })
-                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                    +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
-                        p
-                            |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
-                +section({ title: "software", icon: "software" })
-                    +software({ name: "photoshop", value: 95 })
-                    +software({ name: "dreamweaver", value: 80 })
-                    +software({ name: "illustrator", value: 50 })
-                    +software({ name: "after effects", value: 85 })
-                    +software({ name: "indesign", value: 55 })
-                    +software({ name: "html&css3", value: 95 })
-                     
+                - commonInfo = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit." +
+                -                 "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus" +
+                -                 "et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque"
+
+                -
+                    educationListData = [
+                        { 
+                            degree: "master degree", 
+                            date: "Feb 2011 - Jun 2014", 
+                            university: "university name",
+                            info: commonInfo
+                        },
+                        { 
+                            degree: "master degree", 
+                            date: "Feb 2011 - Jun 2014", 
+                            university: "university name",
+                            info: commonInfo
+                        },
+                        { 
+                            degree: "master degree", 
+                            date: "Feb 2011 - Jun 2014", 
+                            university: "university name",
+                            info: commonInfo
+                        },
+                        { 
+                            degree: "master degree", 
+                            date: "Feb 2011 - Jun 2014", 
+                            university: "university name",
+                            info: commonInfo
+                        }
+                    ] 
+                +education-list(educationListData)
+
+                -
+                    experienceListData = [
+                        { 
+                            company: "company name", 
+                            date: "Feb 2011 - Jun 2014", 
+                            job: "your job here",
+                            info: commonInfo 
+                        },
+                        { 
+                            company: "company name", 
+                            date: "Feb 2011 - Jun 2014", 
+                            job: "your job here",
+                            info: commonInfo 
+                        },
+                        { 
+                            company: "company name", 
+                            date: "Feb 2011 - Jun 2014", 
+                            job: "your job here",
+                            info: commonInfo 
+                        },
+                    ] 
+                +experience-list(experienceListData)
+                
+                -
+                    softwareListData = [
+                        { name: "photoshop", value: 95 }, 
+                        { name: "dreamweaver", value: 80 },
+                        { name: "illustrator", value: 50 },
+                        { name: "after effects", value: 85 },
+                        { name: "indesign", value: 55 },
+                        { name: "html&css3", value: 95 }
+                    ]
+                +software-list(softwareListData)

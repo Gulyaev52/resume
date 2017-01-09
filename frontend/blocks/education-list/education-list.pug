@@ -1,0 +1,6 @@
+include ../education/education
+
+mixin education-list(options)
+    +section({ title: "education", icon: "education", blockName: "education-list" })
+        each option in options
+            +education(option)

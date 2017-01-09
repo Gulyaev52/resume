@@ -1,11 +1,12 @@
 include ../icon/icon
 
-mixin section(options)
+mixin section({ icon, title, blockName }) 
     .section
         .section__header
             .section__icon
-                +icon(options.icon)
-            .section__title= options.title
+                +icon(icon)
+            .section__title= title
             .section__line
-        .section__content
+        -const contentElement = blockName ? `${blockName}__content` : ""
+        .section__content(class=contentElement)
             block

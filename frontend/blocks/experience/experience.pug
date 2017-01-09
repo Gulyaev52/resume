@@ -1,6 +1,6 @@
 include ../list-item/list-item
 
-mixin experience({ company, date, job }) 
+mixin experience({ company, date, job, info }) 
     -const optionsListItem = { 
     -    name: company, 
     -    date: date, 
@@ -9,4 +9,4 @@ mixin experience({ company, date, job })
     -    nameClass: "experience__company"
     -}
     +list-item(optionsListItem)
-        block
+        p= info

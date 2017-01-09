@@ -1,0 +1,7 @@
+include ../section/section
+include ../experience/experience
+
+mixin experience-list(options)
+    +section({ title: "experience", icon: "experience", blockName: "experience-list" })
+        each option in options
+            +experience(option)
