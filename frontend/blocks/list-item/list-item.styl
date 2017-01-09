@@ -1,6 +1,9 @@
+.list-item:first-child 
+    margin-top 4%
+
 .list-item
     position relative
-    margin-top 3%
+    margin-top 1.7%
     padding-left 8% 
 
     &:before
@@ -15,12 +18,13 @@
 
     &__title
         display flex
-        flex-wrap wrap
+        flex-wrap wrap 
 
     &__title-item
-        font-size 30px
-        text-transform uppercase
         margin-right 2%
+        line-height 1.3em
+        font-size 1.75em
+        text-transform uppercase
 
     &__name
         font-family MyriadProBold
@@ -33,7 +37,8 @@
             padding 7px
 
     &__content
-        margin-top 5px
+        margin-top 8px
+        font-size 1.07em
 
 @media screen and (max-width: 569px)
     .list-item 

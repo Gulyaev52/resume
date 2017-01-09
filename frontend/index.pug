@@ -8,6 +8,9 @@ include blocks/software/software
 
 html
     title Resume
+    //стандартный viewport
+    //vw
+    //vh
     body
         include blocks/layout/layout
             .layout__column.layout__column_left  
@@ -27,7 +30,10 @@ html
                         |mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
                         |Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
                         |eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                        |Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </b>
+                        |Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+                        |Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                        |rhoncus ut, imperdiet a, venenatis vitae, justo.
+                        | Aenean massa. Cum sociis natoque penatibus</b>
                 +section({ title: "contact", icon: "contact" })
                     +contact({ title: "adress", value: "Main Street, City." })
                     +contact({ title: "e-mail", type: "email", value: "contact@domain.com" })
@@ -44,50 +50,43 @@ html
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                     +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                     +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                     +education({ degree: "master degree", date: "Feb 2011 - Jun 2014", university: "university name" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                 +section({ title: "experience", icon: "experience" })
                     +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                     +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem. 
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                     +experience({ company: "company name", date: "Feb 2011 - Jun 2014", job: "your job here" })
                         p
                             |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             |Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            |ultricies nec, pellentesque eu, pretium quis, sem.
+                            |et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, pellentesque. 
                 +section({ title: "software", icon: "software" })
                     +software({ name: "photoshop", value: 95 })
-                    +software({ name: "illustrator", value: 80 })
-                    +software({ name: "indesign", value: 50 })
-                    +software({ name: "dreamweaver", value: 85 })
-                    +software({ name: "after effects", value: 55 })
+                    +software({ name: "dreamweaver", value: 80 })
+                    +software({ name: "illustrator", value: 50 })
+                    +software({ name: "after effects", value: 85 })
+                    +software({ name: "indesign", value: 55 })
                     +software({ name: "html&css3", value: 95 })
                      

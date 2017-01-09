@@ -22,10 +22,13 @@
 a.contact__value {
   color: #3d6cb0;
 }
-.education-color {
+.education__color {
   color: #3d6cb0;
 }
-.experience-color {
+.section .experience:first-child {
+  margin-top: 6.3%;
+}
+.experience__company {
   color: #000;
   font-weight: bold;
 }
@@ -74,12 +77,13 @@ a.contact__value {
 .layout {
   display: flex;
   width: 92%;
-  padding: 30px 0;
+  padding: 25px 0;
   margin: 0 auto;
   min-width: 400px;
 }
 .layout__column_left {
-  width: 39%;
+  width: 37.3%;
+  margin-left: 0.8%;
 }
 .layout__column_right {
   width: 55%;
@@ -99,9 +103,12 @@ a.contact__value {
     margin-left: 0;
   }
 }
+.list-item:first-child {
+  margin-top: 4%;
+}
 .list-item {
   position: relative;
-  margin-top: 3%;
+  margin-top: 1.7%;
   padding-left: 8%;
 }
 .list-item:before {
@@ -119,9 +126,10 @@ a.contact__value {
   flex-wrap: wrap;
 }
 .list-item__title-item {
-  font-size: 30px;
-  text-transform: uppercase;
   margin-right: 2%;
+  line-height: 1.3em;
+  font-size: 1.75em;
+  text-transform: uppercase;
 }
 .list-item__name {
   font-family: MyriadProBold;
@@ -134,7 +142,8 @@ a.contact__value {
   padding: 7px;
 }
 .list-item__content {
-  margin-top: 5px;
+  margin-top: 8px;
+  font-size: 1.07em;
 }
 @media screen and (max-width: 569px) {
   .list-item {
@@ -145,7 +154,8 @@ a.contact__value {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10.4%;
+  padding: 13px;
+  margin-bottom: 15%;
   text-transform: uppercase;
 }
 .personal-info__avatar {
@@ -171,21 +181,23 @@ a.contact__value {
   width: 75%;
 }
 .personal-info__name {
-  margin-top: 20px;
-  font-size: 3.5em;
+  margin-top: 25px;
+  font-size: 3.8em;
 }
 .personal-info__surname {
-  line-height: 20px;
-  font-size: 3.5em;
+  line-height: 38px;
+  font-size: 4.15em;
+  font-family: MyriadProBold;
   font-weight: bold;
 }
 .personal-info__profession {
   margin-top: 25px;
-  font-size: 1.5em;
+  font-size: 1.65em;
+  font-family: MyriadProBold;
   font-weight: bold;
 }
 .section {
-  margin-bottom: 10.4%;
+  margin-bottom: 8%;
 }
 .section__icon,
 .section__title {
@@ -196,12 +208,13 @@ a.contact__value {
   align-items: center;
 }
 .section__title {
-  font-size: 45px;
-  color: #3d6cb0;
+  font-family: MyriadProBold;
+  font-size: 2.8em;
   text-transform: uppercase;
+  color: #3d6cb0;
 }
 .section__line {
-  height: 10px;
+  height: 6px;
   flex-grow: 1;
   background-color: #3d6cb0;
 }
@@ -247,15 +260,15 @@ a.contact__value {
   display: flex;
   flex-direction: column;
   width: 45%;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .software__name {
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .software__progress-frame {
-  height: 20px;
+  height: 21px;
   background-color: #e6e6e6;
 }
 .software__progress-value {
@@ -344,4 +357,4 @@ b {
   font-style: normal;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==*/
