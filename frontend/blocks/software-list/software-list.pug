@@ -2,6 +2,7 @@ include ../section/section
 include ../software/software
 
 mixin software-list(options) 
-    +section({ title: "software", icon: "software", blockName: "software-list" })
-        each option in options
-            +software(option)
+    .software-list
+        +section({ title: "software", icon: "software", blockName: "software-list" })
+            each option in options
+                +software(option)

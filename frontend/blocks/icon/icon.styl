@@ -1,12 +1,19 @@
-.icon 
-    height 79.2px
-    width @height
+double-circle(height, border-size)
+    height height
+    width height
     border-radius 50%
     box-shadow: 0 0 0 1pt mainColor
-    border: 4px solid white
+    border border-size solid white
     background-color mainColor
+
+.icon 
+    double-circle(79.2px, 4px) 
     background-image url("sprites.png")
     background-repeat no-repeat 
+
+    &_avatar
+        double-circle(255px, 15px) 
+        background-image none
     
     &_profile
         background-position 108% 115%

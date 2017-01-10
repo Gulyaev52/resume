@@ -8,16 +8,17 @@
         display flex 
         align-items center  
 
+        &:after
+            content "" 
+            height 6px 
+            flex-grow 1
+            background-color mainColor
+
     &__title
         font-family MyriadProBold
         font-size 2.8em 
         text-transform uppercase
         color mainColor
-
-    &__line
-        height 6px 
-        flex-grow 1
-        background-color mainColor
 
     &__content
         margin-top 3% 

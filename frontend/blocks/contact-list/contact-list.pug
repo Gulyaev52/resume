@@ -2,6 +2,7 @@ include ../section/section
 include ../contact/contact
 
 mixin contact-list(options)
-    +section({ title: "contact", icon: "contact", blockName: "contact-list" })
-        each option in options
-            +contact(option)
+    .contact-list
+        +section({ title: "contact", icon: "contact", blockName: "contact-list" })
+            each option in options
+                +contact(option)

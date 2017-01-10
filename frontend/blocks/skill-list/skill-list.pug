@@ -1,6 +1,7 @@
 include ../skill/skill
 
 mixin skill-list(options)
-    +section({ title: "skills", icon: "skill", blockName: "skill-list" })
-        each option in options
-            +skill(option)
+    .skill-list
+        +section({ title: "skills", icon: "skill", blockName: "skill-list" })
+            each option in options
+                +skill(option)

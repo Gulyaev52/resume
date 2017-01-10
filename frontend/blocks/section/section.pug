@@ -5,8 +5,7 @@ mixin section({ icon, title, blockName })
         .section__header
             .section__icon
                 +icon(icon)
-            .section__title= title
-            .section__line
+            .section__title= title 
         -const contentElement = blockName ? `${blockName}__content` : ""
         .section__content(class=contentElement)
             block
