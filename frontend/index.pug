@@ -15,11 +15,14 @@ html
     body
         include blocks/layout/layout
             .layout__column.layout__column_left  
-                +personal-info({ 
-                    name: "name here", 
-                    surname: "surname", 
-                    profession: "graphic designer" 
-                })  
+                -
+                    personalInfoData = {
+                        name: "name here", 
+                        surname: "surname", 
+                        profession: "graphic designer"                        
+                    }
+                +personal-info(personalInfoData)
+                  
                 +profile()
                     p 
                         |Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

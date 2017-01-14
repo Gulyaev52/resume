@@ -1,0 +1,7 @@
+include ../icon/icon
+
+mixin title({ icon, text })
+    .title
+        .title__icon
+            +icon(icon)
+        .title__title= text
