@@ -1,5 +1,5 @@
-mixin software(options)
-    .software
-        .software__name= options.name
+mixin software({ name, value })
+    .software(class = attributes.class)
+        .software__name= name
         .software__progress-frame
-            .software__progress-value(style=`width:${options.value}%`)
+            .software__progress-value(style=`width: ${value}%`)

@@ -3,13 +3,6 @@ include ../contact/contact
 
 mixin contact-list(options)
     .contact-list
-        +section({ title: "contact", icon: "contact", blockName: "contact-list" })
+        +section({ title: "contact", icon: "contact"})
             each option in options
-                +contact(option)
-
-//mixin contact-list(options)
-//    .contact-list
-//        +title({ title: "contact", icon: "contact", blockName: "contact-list" })
-//        .contact-list__content
-//            each option in options
-//                +contact(option)
+                +contact(option)(class = "contact-list__item")

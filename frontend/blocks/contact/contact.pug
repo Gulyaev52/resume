@@ -1,7 +1,15 @@
-mixin contact({ title, type, value, action })
-    -const getHrefValue = (type, value, action) =>
-    -    type == "link" ? value : `${type}: ${value}${action ? `?${action}` : ""}`
-    .contact
+mixin contact({ title, type, value, action }) 
+    -
+        const getHrefValue = (type, value, action) => {
+            if (type == "link")
+                return value
+            else {
+                const typeFragment = `${type}: `; 
+                const actionFragment = action ? `?${action}` : "";
+                return typeFragment + value + actionFragment;
+            }
+        }
+    .contact(class = attributes.class) 
         .contact__title= title 
         if type == "text"
             .contact__value= value

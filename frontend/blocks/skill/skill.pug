@@ -1,7 +1,7 @@
-mixin skill(options)
-    .skill
-        .skill__name= options.name
+mixin skill({ name, value })
+    .skill(class = attributes.class)
+        .skill__name= name
         .skill__value
             -for (let i = 0; i < 12; i++)
-                -const valueItemState = `skill__value-item_${i < options.value ? "active" : "unactive"}` 
+                -const valueItemState = `skill__value-item_${i < value ? "active" : "unactive"}` 
                 .skill__value-item(class=valueItemState)

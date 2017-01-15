@@ -1,7 +1,7 @@
 include ../icon/icon
 
-mixin title({ icon, text })
+mixin title({ iconName, text })
     .title
-        .title__icon
-            +icon(icon)
-        .title__title= text
+        .title__item.title__icon
+            +icon(iconName)
+        .title__item.title__text= text

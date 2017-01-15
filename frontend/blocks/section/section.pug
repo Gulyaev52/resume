@@ -1,11 +1,8 @@
-include ../icon/icon
+include ../title/title
 
 mixin section({ icon, title, blockName }) 
     .section
-        .section__header
-            .section__icon
-                +icon(icon)
-            .section__title= title 
+        +title({ text: title, iconName: icon })
         -const contentElement = blockName ? `${blockName}__content` : ""
-        .section__content(class=contentElement)
+        .section__content(class = contentElement)&attributes(attributes)
             block

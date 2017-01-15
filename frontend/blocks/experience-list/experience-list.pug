@@ -5,4 +5,5 @@ mixin experience-list(options)
     .experience-list
         +section({ title: "experience", icon: "experience", blockName: "experience-list" })
             each option in options
-                +experience(option)
+                .experience-list__item
+                    +experience(option)

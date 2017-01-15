@@ -1,9 +1,8 @@
 include ../icon/icon
 
 mixin personal-info(options)
-    .personal-info
-        .personal-info__avatar
-            +icon("avatar")
+    .personal-info 
+        +icon("avatar")
         .personal-info__name= options.name
         .personal-info__surname= options.surname
         .personal-info__profession= options.profession

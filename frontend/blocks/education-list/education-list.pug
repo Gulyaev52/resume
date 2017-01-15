@@ -4,4 +4,5 @@ mixin education-list(options)
     .education-list
         +section({ title: "education", icon: "education", blockName: "education-list" })
             each option in options
-                +education(option)
+                .education-list__item
+                    +education(option)
