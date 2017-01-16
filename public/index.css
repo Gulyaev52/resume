@@ -1,44 +1,49 @@
-.contact-list__item {
-  margin-top: 7%;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+html {
+  font-size: 16px;
+  font-family: MyriadProRegular;
 }
-.contact__title {
-  flex-basis: 28%;
-  font-size: 1.4em;
-  color: #3d6cb0;
+b {
   font-family: MyriadProBold;
-  text-transform: uppercase;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.contact__value {
-  flex-basis: 69%;
-  font-size: 1.4em;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.resume {
+  display: flex;
+  padding: 25px 4%;
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 1650px;
 }
-a.contact__value {
-  color: #3d6cb0;
+.resume__column_left {
+  width: 37.3%;
+  margin-left: 0.8%;
 }
-.education-list__item {
-  margin-top: 1.7%;
+.resume__column_right {
+  width: 55%;
+  margin-left: 6%;
 }
-.education__color {
-  color: #3d6cb0;
+.resume__item {
+  margin-bottom: 8%;
 }
-.experience-list__item {
-  margin-top: 1.7%;
+.resume__personal-info {
+  margin-bottom: 15%;
 }
-.experience-list .experience-list__content {
-  margin-top: 6.3%;
-}
-.experience__company {
-  color: #000;
-  font-weight: bold;
+@media screen and (max-width: 930px) {
+  .resume {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume__column_left,
+  .resume__column_right {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .resume__column_right {
+    margin-left: 0;
+  }
 }
 .icon {
   height: 79.2px;
@@ -76,6 +81,68 @@ a.contact__value {
 }
 .icon_software {
   background-position: -5.5% 113%;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.title:after {
+  content: "";
+  height: 6px;
+  flex-grow: 1;
+  background-color: #3d6cb0;
+}
+.title__item {
+  margin-right: 4%;
+  font-family: MyriadProBold;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.section__content {
+  margin-top: 3%;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__title {
+  flex-basis: 28%;
+  font-size: 1.4em;
+  color: #3d6cb0;
+  font-family: MyriadProBold;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contact__value {
+  flex-basis: 69%;
+  font-size: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a.contact__value {
+  color: #3d6cb0;
+}
+.contact-list__item {
+  margin-top: 7%;
+}
+.education__color {
+  color: #3d6cb0;
+}
+.education-list__item {
+  margin-top: 1.7%;
+}
+.experience__company {
+  color: #000;
+  font-weight: bold;
+}
+.experience-list__item {
+  margin-top: 1.7%;
+}
+.experience-list__content {
+  margin-top: 6.3%;
 }
 .list-item {
   position: relative;
@@ -147,47 +214,6 @@ a.contact__value {
 .profile__content {
   font-size: 1.06em;
 }
-.resume {
-  display: flex;
-  padding: 25px 4%;
-  margin: 0 auto;
-  min-width: 400px;
-  max-width: 1650px;
-}
-.resume__column_left {
-  width: 37.3%;
-  margin-left: 0.8%;
-}
-.resume__column_right {
-  width: 55%;
-  margin-left: 6%;
-}
-.resume__item {
-  margin-bottom: 8%;
-}
-.resume__personal-info {
-  margin-bottom: 15%;
-}
-@media screen and (max-width: 930px) {
-  .resume {
-    flex-direction: column;
-    align-items: center;
-  }
-  .resume__column_left,
-  .resume__column_right {
-    width: 100%;
-    padding: 0 5%;
-  }
-  .resume__column_right {
-    margin-left: 0;
-  }
-}
-.section__content {
-  margin-top: 3%;
-}
-.skill-list__item {
-  margin-top: 4%;
-}
 .skill {
   display: flex;
   flex-direction: column;
@@ -222,23 +248,8 @@ a.contact__value {
 .skill__value-item_unactive {
   background-color: #e6e6e6;
 }
-.software-list__content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-width: 100%;
-  text-align: left;
-}
-.software-list__item {
-  margin-bottom: 25px;
-}
-@media screen and (max-width: 516px) {
-  .software-list__content {
-    flex-direction: column;
-    text-align: center;
-  }
+.skill-list__item {
+  margin-top: 4%;
 }
 .software {
   width: 45%;
@@ -261,34 +272,23 @@ a.contact__value {
     width: 100%;
   }
 }
-.title {
+.software-list__content {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 100%;
+  text-align: left;
 }
-.title:after {
-  content: "";
-  height: 6px;
-  flex-grow: 1;
-  background-color: #3d6cb0;
+.software-list__item {
+  margin-bottom: 25px;
 }
-.title__item {
-  margin-right: 4%;
-  font-family: MyriadProBold;
-  font-size: 2.8em;
-  text-transform: uppercase;
-  color: #3d6cb0;
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-html {
-  font-size: 16px;
-  font-family: MyriadProRegular;
-}
-b {
-  font-family: MyriadProBold;
+@media screen and (max-width: 516px) {
+  .software-list__content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 /* font-family: "MyriadProRegular"; */
 @font-face {
