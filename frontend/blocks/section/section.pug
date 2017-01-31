@@ -1,8 +1,8 @@
 include ../title/title
 
-mixin section({ icon, title, blockName }) 
+mixin section({ icon, title, contentType='row' }) 
     .section
-        +title({ text: title, iconName: icon })
-        -const contentElement = blockName ? `${blockName}__content` : ""
-        .section__content(class = contentElement)&attributes(attributes)
+        .section__title
+            +title({ text: title, iconName: icon }) 
+        .section__content(class = `section__content_${contentType}`)
             block

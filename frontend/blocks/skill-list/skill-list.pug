@@ -4,4 +4,5 @@ mixin skill-list(options)
     .skill-list
         +section({ title: "skills", icon: "skill" })
             each option in options
-                +skill(option)(class = "skill-list__item")
+                .skill-list__item
+                    +skill(option)

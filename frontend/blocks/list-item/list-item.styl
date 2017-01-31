@@ -1,6 +1,15 @@
+@require '../../colors'
+
 .list-item
     position relative
     padding-left 8% 
+
+    &_default &__name
+        color mainColor
+
+    &_black &__name
+        color black
+        font-weight bold
 
     &:before
         content "" 
@@ -15,12 +24,12 @@
     &__title
         display flex
         flex-wrap wrap 
-
-    &__title-item
-        margin-right 2%
         line-height 1.3em
         font-size 1.75em
         text-transform uppercase
+
+        & > *                        
+            margin-right 2%
 
     &__name
         font-family MyriadProBold

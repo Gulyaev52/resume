@@ -3,7 +3,7 @@ include ../experience/experience
 
 mixin experience-list(options)
     .experience-list
-        +section({ title: "experience", icon: "experience", blockName: "experience-list" })
+        +section({ title: "experience", icon: "experience" })
             each option in options
                 .experience-list__item
                     +experience(option)

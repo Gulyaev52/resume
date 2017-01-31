@@ -9,9 +9,10 @@ mixin contact({ title, type, value, action })
                 return typeFragment + value + actionFragment;
             }
         }
-    .contact(class = attributes.class) 
+    .contact
         .contact__title= title 
         if type == "text"
-            .contact__value= value
+            .contact__value.contact__value_text= value
         else 
-            a.contact__value(href = getHrefValue(type, value, action))= value
+            a.contact__value.contact__value_link(
+                href = getHrefValue(type, value, action))= value

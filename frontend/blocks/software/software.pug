@@ -1,5 +1,6 @@
-mixin software({ name, value })
-    .software(class = attributes.class)
+include ../rectangle-progress/rectangle-progress
+
+mixin software({ name, value=0 })
+    .software
         .software__name= name
-        .software__progress-frame
-            .software__progress-value(style=`width: ${value}%`)
+        +rectangle-progress({ value })

@@ -1,7 +1,7 @@
+include ../circle-progress/circle-progress
+
 mixin skill({ name, value })
-    .skill(class = attributes.class)
+    .skill
         .skill__name= name
-        .skill__value
-            -for (let i = 0; i < 12; i++)
-                -const valueItemState = `skill__value-item_${i < value ? "active" : "unactive"}` 
-                .skill__value-item(class=valueItemState)
+        .skill__progress
+            +circle-progress({ value })
