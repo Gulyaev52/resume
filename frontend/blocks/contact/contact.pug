@@ -1,18 +1,19 @@
 mixin contact({ title, type, value, action }) 
-    -
-        const getHrefValue = (type, value, action) => {
-            if (type == "link")
-                return value
-            else {
-                const typeFragment = `${type}: `; 
-                const actionFragment = action ? `?${action}` : "";
-                return typeFragment + value + actionFragment;
-            }
-        }
     .contact
-        .contact__title= title 
+        span.contact__title= title 
         if type == "text"
-            .contact__value.contact__value_text= value
+            span.contact__value.contact__value_text= value
         else 
-            a.contact__value.contact__value_link(
-                href = getHrefValue(type, value, action))= value
+            -const hrefValue = getHrefValue(type, value, action) 
+            a.contact__value.contact__value_link(href = hrefValue)= value
+
+-
+    const getHrefValue = (type, value, action) => {
+        if (type == "link")
+            return value
+        else {
+            const typeFragment = `${type}: `; 
+            const actionFragment = action ? `?${action}` : "";
+            return typeFragment + value + actionFragment;
+        }
+    }

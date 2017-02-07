@@ -1,18 +1,19 @@
-@require '../../colors'
+@require '../../colors' 
 
 .title
     display flex 
     align-items center 
 
+    &__icon
+    &__text
+        margin-right 4%
+        color main-color
+        font-size 2.8rem
+        font-family MyriadProBold 
+        text-transform uppercase
+
     &:after
         content "" 
         height 6px 
         flex-grow 1
-        background-color mainColor
-
-    &__item
-        margin-right 4%
-        font-family MyriadProBold
-        font-size 2.8em 
-        text-transform uppercase
-        color mainColor
+        background-color main-color

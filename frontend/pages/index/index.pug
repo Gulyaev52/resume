@@ -1,12 +1,15 @@
-include ../personal-info/personal-info
-include ../profile/profile 
-include ../contact-list/contact-list 
-include ../skill-list/skill-list
-include ../education-list/education-list
-include ../experience-list/experience-list
-include ../software-list/software-list
+include ~blocks/personal-info/personal-info
+include ~blocks/profile/profile 
+include ~blocks/contact-list/contact-list 
+include ~blocks/skill-list/skill-list
+include ~blocks/education-list/education-list
+include ~blocks/experience-list/experience-list
+include ~blocks/software-list/software-list
 
-mixin resume()
+block title
+    | Resume
+    
+block main
     .resume
         .resume__column.resume__column_left
             .resume__personal-info 

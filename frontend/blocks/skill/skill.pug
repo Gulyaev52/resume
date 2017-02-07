@@ -2,6 +2,6 @@ include ../circle-progress/circle-progress
 
 mixin skill({ name, value })
     .skill
-        .skill__name= name
+        span.skill__name= name
         .skill__progress
             +circle-progress({ value })

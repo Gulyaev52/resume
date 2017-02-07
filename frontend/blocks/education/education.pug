@@ -7,5 +7,6 @@ mixin education({ degree, date, university, info })
     -    subname: university,
     -    theme: 'default'
     -}
-    +list-item(optionsListItem)
-        p= info
+    .education
+        +list-item(optionsListItem)
+            p= info

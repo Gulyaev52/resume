@@ -4,12 +4,8 @@
     position relative
     padding-left 8% 
 
-    &_default &__name
-        color mainColor
-
-    &_black &__name
-        color black
-        font-weight bold
+    @media screen and (max-width: 569px) 
+        padding-left 50px
 
     &:before
         content "" 
@@ -25,17 +21,23 @@
         display flex
         flex-wrap wrap 
         line-height 1.3em
-        font-size 1.75em
+        font-size 1.75rem
         text-transform uppercase
-
-        & > *                        
-            margin-right 2%
 
     &__name
         font-family MyriadProBold
+        margin-right 2%
+
+    &_default &__name
+        color main-color
+
+    &_black &__name
+        color black
+        font-weight bold
 
     &__date
         text-transform capitalize
+        margin-right 2%
 
         &:before
             content: "//"
@@ -43,8 +45,4 @@
 
     &__content
         margin-top 8px
-        font-size 1.07em
-
-@media screen and (max-width: 569px)
-    .list-item 
-        padding-left 50px
+        font-size 1.07rem

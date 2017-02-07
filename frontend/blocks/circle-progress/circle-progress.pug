@@ -2,4 +2,4 @@ mixin circle-progress({ value=0, maxValue=12 })
     .circle-progress
         -for (let i = 0; i < maxValue; i++) 
             -const pointState = `circle-progress__point_${i < value ? "active" : "unactive"}` 
-            .circle-progress__point(class = pointState)
+            span.circle-progress__point(class = pointState)

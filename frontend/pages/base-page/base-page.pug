@@ -1,6 +1,3 @@
-include ./index-data
-include blocks/resume/resume
-
 doctype html
 html
     head
@@ -8,6 +5,7 @@ html
         meta(name="viewport", content="initial-scale=1.0, width=device-width") 
         meta(name="description", content="Учебный макет")
         meta(name="Keywords", content="resume") 
-        title Resume 
+        title
+            block title
     body
-        +resume()
+        block main

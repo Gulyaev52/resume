@@ -7,5 +7,6 @@ mixin experience({ company, date, job, info })
     -    subname: job,
     -    theme: 'black'
     -}
-    +list-item(optionsListItem)
-        p= info
+    .experience
+        +list-item(optionsListItem)
+            p= info

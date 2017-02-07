@@ -1,12 +1,8 @@
 mixin list-item(options)
     .list-item(class = `list-item_${options.theme}`)
         .list-item__title
-            .list-item__name= options.name
-            .list-item__date= options.date
-            .list-item__subname= options.subname
+            span.list-item__name= options.name
+            span.list-item__date= options.date
+            span.list-item__subname= options.subname
         .list-item__content
             block
-
-
-//.list-item__title-item
-// & > *

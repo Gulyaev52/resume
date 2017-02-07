@@ -1,6 +1,6 @@
 include ../section/section
 
 mixin profile(options)
-    .profile(class = attributes.class)
-        +section({ title: "profile", icon: "profile" })(class = "profile__content")
+    .profile
+        +section({ title: "profile", icon: "profile" })
             block
