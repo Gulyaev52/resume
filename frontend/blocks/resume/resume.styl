@@ -13,19 +13,21 @@ breakpoint-value = 930px
 
     &__column 
 
-        @media screen and (max-width: breakpoint-value)
-            width 100% 
-            padding 0 5%
-
         &_left
             width 37.3%
             margin-left 0.8%
+
+            @media screen and (max-width: breakpoint-value)
+                width 100% 
+                padding 0 5%
 
         &_right 
             width 55%
             margin-left 6% 
 
             @media screen and (max-width: breakpoint-value) 
+                width 100% 
+                padding 0 5%
                 margin-left 0
 
     &__personal-info

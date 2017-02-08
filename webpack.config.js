@@ -8,7 +8,7 @@ module.exports = {
     context: `${__dirname}/frontend`,
 
     entry: {
-        main: './index.js'
+        main: './pages/index/index.js'
     },
 
     output: {
@@ -26,11 +26,14 @@ module.exports = {
             NODE_ENV: JSON.stringify(NODE_ENV)
         }),
         new ExtractTextPlugin('index.css', {allChunks: true}),
-        new HtmlWebpackPlugin({ filename: 'index.html', template: './index.pug' })
+        new HtmlWebpackPlugin({ 
+            filename: 'index.html', 
+            template: './pages/index/index.pug' 
+        })
     ],
 
     resolve: {
-        modulesDirectories: ['node_modules'],
+        modulesDirectories: ['node_modules', 'blocks'],
         extensions: ['', '.js', '.styl', '.pug']
     },
 
