@@ -33,7 +33,7 @@ module.exports = {
     ],
 
     resolve: {
-        modulesDirectories: ['node_modules', 'blocks'],
+        modulesDirectories: ['node_modules', 'blocks', 'theme'],
         extensions: ['', '.js', '.styl', '.pug']
     },
 
