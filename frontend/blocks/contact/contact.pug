@@ -1,15 +1,19 @@
 mixin contact({ title, type, value, action }) 
     .contact
         span.contact__title= title 
-        if type == "text"
+        if type == 'text'
             span.contact__value.contact__value_text= value
         else 
             -const hrefValue = getHrefValue(type, value, action) 
-            a.contact__value.contact__value_link(href = hrefValue)= value
+            a.contact__value.contact__value_link(
+                href = hrefValue,
+                target = '_blank',
+                rel = 'noopener noreferrer'
+            )= value
 
 -
     const getHrefValue = (type, value, action) => {
-        if (type == "link")
+        if (type == 'link')
             return value
         else {
             const typeFragment = `${type}: `; 

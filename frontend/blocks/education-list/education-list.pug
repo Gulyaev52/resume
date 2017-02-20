@@ -3,6 +3,7 @@ include ../education/education
 mixin education-list(options)
     .education-list
         +section({ title: "education", icon: "education" })
-            each option in options
-                .education-list__item
-                    +education(option)
+            ul.education-list__items
+                each option in options
+                    li.education-list__item
+                        +education(option)

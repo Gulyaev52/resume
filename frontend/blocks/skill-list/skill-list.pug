@@ -3,6 +3,7 @@ include ../skill/skill
 mixin skill-list(options)
     .skill-list
         +section({ title: "skills", icon: "skill" })
-            each option in options
-                .skill-list__item
-                    +skill(option)
+            ul.skill-list__items
+                each option in options
+                    li.skill-list__item
+                        +skill(option)

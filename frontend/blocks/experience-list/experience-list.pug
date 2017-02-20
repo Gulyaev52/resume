@@ -4,6 +4,7 @@ include ../experience/experience
 mixin experience-list(options)
     .experience-list
         +section({ title: "experience", icon: "experience" })
-            each option in options
-                .experience-list__item
-                    +experience(option)
+            ul.experience-list__items
+                each option in options
+                    li.experience-list__item
+                        +experience(option)
